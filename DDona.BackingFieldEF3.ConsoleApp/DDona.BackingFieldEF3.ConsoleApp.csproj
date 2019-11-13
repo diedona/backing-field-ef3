@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DDona.BackingFieldEF3.Domain\DDona.BackingFieldEF3.Domain.csproj" />
+    <ProjectReference Include="..\DDona.BackingFieldEF3.Infra\DDona.BackingFieldEF3.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

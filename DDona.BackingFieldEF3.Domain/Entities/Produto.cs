@@ -9,6 +9,6 @@ namespace DDona.BackingFieldEF3.Domain.Entities
         public Guid Id { get; set; }
         public string Nome { get; set; }
         public DateTime DataCriado { get; set; }
-        public decimal PrecoUnidade { get; set; }
+        public decimal? PrecoUnidade { get; set; }
     }
 }

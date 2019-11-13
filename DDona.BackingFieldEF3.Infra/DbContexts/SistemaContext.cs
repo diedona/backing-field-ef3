@@ -16,11 +16,27 @@ namespace DDona.BackingFieldEF3.Infra.DbContexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // todas as configurações normais de entidade viriam aqui
+            // todas as configurações normais de entidade do seu projeto
 
-            modelBuilder.Entity<Produto>().HasKey(x => x.Id);
+            #region [ PRODUTO ]
 
-            // código abreviado por claridade
+            modelBuilder.Entity<Produto>()
+                .HasKey(x => x.Id);
+
+            modelBuilder.Entity<Produto>()
+                .Property(x => x.Nome)
+                .HasMaxLength(100)
+                .IsRequired();
+
+            modelBuilder.Entity<Produto>()
+                .Property(x => x.DataCriado)
+                .IsRequired();
+
+            modelBuilder.Entity<Produto>()
+                .Property(x => x.PrecoUnidade)
+                .IsRequired(false); 
+
+            #endregion
         }
     }
 }
