@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DDona.BackingFieldEF3.Domain
+namespace DDona.BackingFieldEF3.Domain.Entities
 {
     public class Produto
     {

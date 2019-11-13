@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDona.BackingFieldEF3.Domain", "DDona.BackingFieldEF3.Domain\DDona.BackingFieldEF3.Domain.csproj", "{49039C8A-E119-45E2-AB80-4352D1782024}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDona.BackingFieldEF3.Infra", "DDona.BackingFieldEF3.Infra\DDona.BackingFieldEF3.Infra.csproj", "{E3F28EED-6D91-4E46-968D-BDB29A1E4BB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{49039C8A-E119-45E2-AB80-4352D1782024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49039C8A-E119-45E2-AB80-4352D1782024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49039C8A-E119-45E2-AB80-4352D1782024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F28EED-6D91-4E46-968D-BDB29A1E4BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F28EED-6D91-4E46-968D-BDB29A1E4BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F28EED-6D91-4E46-968D-BDB29A1E4BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F28EED-6D91-4E46-968D-BDB29A1E4BB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
