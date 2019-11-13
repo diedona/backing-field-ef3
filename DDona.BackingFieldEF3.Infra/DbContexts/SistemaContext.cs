@@ -35,7 +35,25 @@ namespace DDona.BackingFieldEF3.Infra.DbContexts
 
             modelBuilder.Entity<Produto>()
                 .Property(x => x.PrecoUnidade)
-                .IsRequired(false); 
+                .IsRequired(false);
+
+            modelBuilder.Entity<Produto>()
+                .HasMany(x => x.Precos)
+                .WithOne(x => x.Produto)
+                .Metadata.PrincipalToDependent.SetField("_precos");
+
+            #endregion
+
+            #region [ PREÇO X PRODUTO ]
+
+            modelBuilder.Entity<PrecoProduto>()
+                .ToTable("PrecoProduto")
+                .HasKey(x => x.Id);
+
+            modelBuilder.Entity<PrecoProduto>()
+                .HasOne(x => x.Produto)
+                .WithMany(x => x.Precos)
+                .HasForeignKey(x => x.IdProduto);
 
             #endregion
         }

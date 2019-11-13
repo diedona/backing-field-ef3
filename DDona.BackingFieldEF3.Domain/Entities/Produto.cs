@@ -6,7 +6,7 @@ namespace DDona.BackingFieldEF3.Domain.Entities
 {
     public class Produto
     {
-        private readonly List<PrecoProduto> _precoProdutos;
+        private readonly List<PrecoProduto> _precos;
 
         public Guid Id { get; set; }
         public string Nome { get; set; }
@@ -15,9 +15,9 @@ namespace DDona.BackingFieldEF3.Domain.Entities
 
         public Produto()
         {
-            _precoProdutos = new List<PrecoProduto>();
+            _precos = new List<PrecoProduto>();
         }
 
-        public IReadOnlyCollection<PrecoProduto> Precos { get { return _precoProdutos.AsReadOnly(); } }
+        public IReadOnlyCollection<PrecoProduto> Precos { get { return _precos.AsReadOnly(); } }
     }
 }
