@@ -9,4 +9,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DDona.BackingFieldEF3.Domain\DDona.BackingFieldEF3.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
