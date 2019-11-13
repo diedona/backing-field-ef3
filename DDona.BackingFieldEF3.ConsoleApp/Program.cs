@@ -6,7 +6,7 @@ namespace DDona.BackingFieldEF3.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
