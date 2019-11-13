@@ -16,4 +16,10 @@
     <ProjectReference Include="..\DDona.BackingFieldEF3.Infra\DDona.BackingFieldEF3.Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
