@@ -21,6 +21,7 @@ namespace DDona.BackingFieldEF3.Infra.DbContexts
             #region [ PRODUTO ]
 
             modelBuilder.Entity<Produto>()
+                .ToTable("Produto")
                 .HasKey(x => x.Id);
 
             modelBuilder.Entity<Produto>()
