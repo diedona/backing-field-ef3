@@ -51,6 +51,10 @@ namespace DDona.BackingFieldEF3.Infra.DbContexts
                 .HasKey(x => x.Id);
 
             modelBuilder.Entity<PrecoProduto>()
+                .Property(x => x.Preco)
+                .HasField("_preco");
+
+            modelBuilder.Entity<PrecoProduto>()
                 .HasOne(x => x.Produto)
                 .WithMany(x => x.Precos)
                 .HasForeignKey(x => x.IdProduto);

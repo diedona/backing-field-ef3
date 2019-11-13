@@ -23,6 +23,7 @@ namespace DDona.BackingFieldEF3.ConsoleApp
                     if(precoAtual != null)
                     {
                         Console.WriteLine($"Custa {precoAtual.Preco.ToString()} (preço de {precoAtual.Data.ToShortDateString()})");
+                        precoAtual.SetarPreco(precoAtual.Preco + 0.5m);
                     }
                     else
                     {
@@ -31,6 +32,8 @@ namespace DDona.BackingFieldEF3.ConsoleApp
 
                     Console.WriteLine();
                 }
+
+                db.SaveChanges();
             }
         }
     }
